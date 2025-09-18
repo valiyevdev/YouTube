@@ -11,22 +11,25 @@
     <title>YouTube</title>
 </head>
 
-<body class="bg-[#f1f1f1]">
+<body>
     <header class="flex items-center justify-between px-6 py-1 ">
 
 
         <!-- YouTube logo -->
 
 
-        <div class="flex items-center gap-6">
-            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#000000" width="24px"
-                viewBox="0 0 32 32" version="1.1">
-                <title>bars</title>
-                <path
-                    d="M2 8.749h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM30 15.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0zM30 23.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0z" />
-            </svg>
-            <img class="w-[93px] cursor-pointer"
-                src="https://logos-world.net/wp-content/uploads/2020/06/YouTube-Logo.png" alt="YouTube">
+        <div class="flex items-center gap-3">
+            <div
+                class="w-10 h-10 hover:bg-[#e6e6e6] hover:rounded-full hover:w-10 hover:h-10 flex items-center justify-center cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="24px" viewBox="0 0 32 32" version="1.1">
+                    <path
+                        d="M2 8.749h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM30 15.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0zM30 23.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0z" />
+                </svg>
+            </div>
+            <a href="/">
+                <img class="w-[93px] cursor-pointer"
+                    src="https://logos-world.net/wp-content/uploads/2020/06/YouTube-Logo.png" alt="YouTube">
+            </a>
         </div>
 
         <!-- Search bar -->
@@ -34,7 +37,7 @@
 
         <div class="flex items-center gap-4 relative">
             <input
-                class="w-[640px] border border-solid border-[#c6c6c6] shadow-[inset_0_1px_2px_#eee] rounded-[40px] px-5 py-2 outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-[16px] text-[#777676] font-[400]"
+                class="w-[610px] border border-solid border-[#c6c6c6] shadow-[inset_0_1px_2px_#eee] rounded-[40px] px-5 py-2 outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-[16px] placeholder-gray-600"
                 type="search" placeholder="Search" spellCheck="false" autocorrect="off" autocapitalize="off">
 
             <button aria-label="Search"
@@ -54,7 +57,7 @@
                     </defs>
                 </svg>
             </button>
-            <div class="w-12 h-12 bg-[#e4e1e1] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#e6e6e6]"
+            <div class="w-12 h-12 bg-[#f1f1f1] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#e6e6e6]"
                 title="Search with your voice">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="20px" viewBox="-5 0 32 32"
@@ -80,9 +83,205 @@
 
         <!-- User profile icon -->
 
-
-        <div></div>
+        <div class="flex items-center gap-2">
+            <div
+                class="bg-[#f1f1f1] rounded-full flex items-center justify-between cursor-pointer px-2 gap-1 hover:bg-[#e6e6e6]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" viewBox="0 0 24 24" fill="none">
+                    <rect fill="none" />
+                    <path d="M12 6V18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6 12H18" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-[#0f0f0f] text-[14px] leading-[36px] font-[600] mr-2">Create</span>
+            </div>
+            <div title="Notifications"
+                class="w-12 h-12 hover:bg-[#e6e6e6] hover:rounded-full hover:w-12 hover:h-12 flex items-center justify-center cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23px" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.5 1C10.9477 1 10.5 1.44772 10.5 2V3H9.99998C7.23864 3 4.99999 5.23825 4.99999 7.99975V11C4.99999 11.7377 4.76718 12.5722 4.39739 13.4148C4.03165 14.2482 3.55876 15.0294 3.14142 15.6439C2.38188 16.7624 2.85216 18.5301 4.40564 18.8103C5.42144 18.9935 6.85701 19.2115 8.54656 19.3527C8.54454 19.4015 8.54352 19.4506 8.54352 19.5C8.54352 21.433 10.1105 23 12.0435 23C13.9765 23 15.5435 21.433 15.5435 19.5C15.5435 19.4482 15.5424 19.3966 15.5402 19.3453C17.1921 19.204 18.596 18.9903 19.5943 18.8103C21.1478 18.5301 21.6181 16.7624 20.8586 15.6439C20.4412 15.0294 19.9683 14.2482 19.6026 13.4148C19.2328 12.5722 19 11.7377 19 11V7.99975C19 5.23825 16.7613 3 14 3H13.5V2C13.5 1.44772 13.0523 1 12.5 1H11.5ZM12 19.5C12.5113 19.5 13.0122 19.4898 13.4997 19.4715C13.5076 20.2758 12.8541 20.9565 12.0435 20.9565C11.2347 20.9565 10.5803 20.2778 10.5872 19.4747C11.0473 19.491 11.5191 19.5 12 19.5ZM9.99998 5C8.34305 5 6.99999 6.34298 6.99999 7.99975V11C6.99999 12.1234 6.65547 13.2463 6.22878 14.2186C5.79804 15.2 5.25528 16.0911 4.79599 16.7675C4.78578 16.7825 4.78102 16.7969 4.77941 16.8113C4.77797 16.8242 4.77919 16.8362 4.78167 16.8458C6.3644 17.1303 9.00044 17.5 12 17.5C14.9995 17.5 17.6356 17.1303 19.2183 16.8458C19.2208 16.8362 19.222 16.8242 19.2206 16.8113C19.2189 16.7969 19.2142 16.7825 19.204 16.7675C18.7447 16.0911 18.2019 15.2 17.7712 14.2186C17.3445 13.2463 17 12.1234 17 11V7.99975C17 6.34298 15.6569 5 14 5H9.99998Z"
+                        fill="#000000" />
+                </svg>
+            </div>
+            <div>
+                <img class="w-[32px] h-[32px] ml-3 cursor-pointer rounded-full"
+                    src="https://yt3.ggpht.com/2swQ_e72DJWyNJ4-fsL_5TSUbGCtopmQ0tJXi0LtqPAa7aSS5wJi_UkMCJbc6SbhpDCX-w_vRw=s88-c-k-c0x00ffffff-no-rj"
+                    alt="User-img">
+            </div>
+        </div>
     </header>
+
+
+
+
+    <!-- SIDE BAR -->
+
+
+
+    <div class="bg-gray-100 min-h-screen flex">
+
+        <div class="overlay" onclick="toggleSidebar()"></div>
+
+        <div class="sidebar bg-white h-screen fixed md:relative overflow-y-auto flex flex-col">
+            <div class="flex items-center p-4 border-b">
+                <button onclick="toggleSidebar()" class="p-1 rounded-full hover:bg-gray-200 mr-2">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+                <div class="yt-logo flex items-center flex-1">
+                    <i class="fab fa-youtube text-red-600 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold">YouTube</span>
+                </div>
+            </div>
+
+            <div class="py-2 border-b">
+                <a href="#" class="menu-link px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2 active-menu">
+                    <i class="fas fa-home text-gray-700 w-6"></i>
+                    <span class="menu-text ml-3">Asosiy</span>
+                </a>
+                <a href="#" class="menu-link px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-film text-gray-700 w-6"></i>
+                    <span class="menu-text ml-3">Shorts</span>
+                </a>
+                <a href="#" class="menu-link px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-user-friends text-gray-700 w-6"></i>
+                    <span class="menu-text ml-3">Obunalar</span>
+                </a>
+            </div>
+
+            <div class="py-2 border-b extra-section">
+                <h2 class="px-4 py-2 text-gray-500 font-semibold section-title">Siz</h2>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-history text-gray-700 w-6"></i>
+                    <span class="menu-text ml-6">Tomosha tarixi</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-list text-gray-700 w-6"></i>
+                    <span class="menu-text ml-6">Pleylistlar</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="far fa-clock text-gray-700 w-6"></i>
+                    <span class="menu-text ml-6">Keyinroq</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-thumbs-up text-gray-700 w-6"></i>
+                    <span class="menu-text ml-6">Yoqgan videolar</span>
+                </a>
+            </div>
+
+            <div class="py-2 border-b extra-section">
+                <h2 class="px-4 py-2 text-gray-500 font-semibold section-title">Obunalar</h2>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-purple-500"></div>
+                    <span class="menu-text ml-6">Temur Khatamov</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-blue-400"></div>
+                    <span class="menu-text ml-6">Muxtasar English</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-red-500"></div>
+                    <span class="menu-text ml-6">MrBeast</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-pink-400"></div>
+                    <span class="menu-text ml-6">Barno Askarova</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-yellow-500"></div>
+                    <span class="menu-text ml-6">Kaouflow</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-green-500"></div>
+                    <span class="menu-text ml-6">Winners Academy</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-indigo-500"></div>
+                    <span class="menu-text ml-6">Multi-Level Elevate</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <div class="w-6 h-6 rounded-full bg-gray-400"></div>
+                    <span class="menu-text ml-6">Yana</span>
+                </a>
+            </div>
+
+            <div class="py-2 border-b extra-section">
+                <h2 class="px-4 py-2 text-gray-500 font-semibold section-title">Tanishuv</h2>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-music text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Musiqa</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-broadcast-tower text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Jonli</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-gamepad text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Gaming</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="far fa-newspaper text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Yangiliklar</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-basketball-ball text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Sport</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-lightbulb text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">O'rganish</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-tshirt text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Moda va go'zallik</span>
+                </a>
+            </div>
+
+            <div class="py-2 border-b extra-section">
+                <h2 class="px-4 py-2 text-gray-500 font-semibold section-title">YouTube xizmatlari</h2>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-child text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">YouTube Kids</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-cog text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Sozlamalar</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-flag text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Shikoyatlar tarixi</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-question-circle text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Yordam</span>
+                </a>
+                <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg mx-2">
+                    <i class="fas fa-comment-dots text-gray-600 w-6"></i>
+                    <span class="menu-text ml-6">Fikr-mulohaza</span>
+                </a>
+            </div>
+
+            <div class="py-4 px-4 text-xs text-gray-600 mt-auto extra-section">
+                <div class="flex flex-wrap">
+                    <a href="#" class="mb-1 mr-2 hover:underline">Kanal haqida</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Matbuot</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Mualliflik huquqi</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Biz bilan aloqa</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Ijodkorlar</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Reklama</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Dasturchilar</a>
+                </div>
+                <div class="flex flex-wrap mt-2">
+                    <a href="#" class="mb-1 mr-2 hover:underline">Shartlar</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Maxfiylik</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Qoidalar va xavfsizlik</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">YouTube qanday ishlaydi</a>
+                    <a href="#" class="mb-1 mr-2 hover:underline">Yangi funksiyalarni sinash</a>
+                </div>
+                <div class="mt-4">© 2025 Google LLC</div>
+            </div>
+        </div>
+
+    </div>
+
+
 </body>
 
 </html>
