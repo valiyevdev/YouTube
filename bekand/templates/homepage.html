@@ -11,20 +11,77 @@
     <title>YouTube</title>
 </head>
 
-<body>
-    <header>
-        <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="24px" viewBox="0 0 32 32" version="1.1">
+<body class="bg-[#f1f1f1]">
+    <header class="flex items-center justify-between px-6 py-1 ">
+
+
+        <!-- YouTube logo -->
+
+
+        <div class="flex items-center gap-6">
+            <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="#000000" width="24px"
+                viewBox="0 0 32 32" version="1.1">
                 <title>bars</title>
                 <path
                     d="M2 8.749h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM30 15.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0zM30 23.25h-28c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h28c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0z" />
             </svg>
-            <img class="w-[93px]" src="https://logos-world.net/wp-content/uploads/2020/06/YouTube-Logo.png"
-                alt="YouTube">
+            <img class="w-[93px] cursor-pointer"
+                src="https://logos-world.net/wp-content/uploads/2020/06/YouTube-Logo.png" alt="YouTube">
         </div>
-        <div>
-            <input class="w-[700px] border border-solid border-[#c6c6c6] shadow-[inset_0_1px_2px_#eee] rounded-[40px]" type="search" placeholder="Search">
+
+        <!-- Search bar -->
+
+
+        <div class="flex items-center gap-4 relative">
+            <input
+                class="w-[640px] border border-solid border-[#c6c6c6] shadow-[inset_0_1px_2px_#eee] rounded-[40px] px-5 py-2 outline-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-[16px] text-[#777676] font-[400]"
+                type="search" placeholder="Search" spellCheck="false" autocorrect="off" autocapitalize="off">
+
+            <button aria-label="Search"
+                class="w-[70px] h-[40px] bg-[#f1f1f1] rounded-r-[40px] border-l border-solid border-[#c6c6c6] flex items-center justify-center cursor-pointer hover:bg-[#e6e6e6] absolute right-[65px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26px" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0_15_152)">
+                        <rect width="24" height="24" fill="none" />
+                        <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round" />
+                        <path
+                            d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z"
+                            fill="#000000" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_15_152">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <div class="w-12 h-12 bg-[#e4e1e1] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#e6e6e6]"
+                title="Search with your voice">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="20px" viewBox="-5 0 32 32"
+                    version="1.1">
+                    <title> Search with your voice</title>
+                    <desc>Created with Sketch Beta.</desc>
+                    <defs>
+
+                    </defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <g id="Icon-Set-Filled" sketch:type="MSLayerGroup"
+                            transform="translate(-107.000000, -309.000000)" fill="#000000">
+                            <path
+                                d="M118,333 C121.866,333 125,329.866 125,326 L125,316 C125,312.134 121.866,309 118,309 C114.134,309 111,312.134 111,316 L111,326 C111,329.866 114.134,333 118,333 L118,333 Z M129,328 L127,328 C126.089,332.007 122.282,335 118,335 C113.718,335 109.911,332.007 109,328 L107,328 C107.883,332.799 112.063,336.51 117,336.955 L117,339 L116,339 C115.448,339 115,339.448 115,340 C115,340.553 115.448,341 116,341 L120,341 C120.552,341 121,340.553 121,340 C121,339.448 120.552,339 120,339 L119,339 L119,336.955 C123.937,336.51 128.117,332.799 129,328 L129,328 Z"
+                                id="microphone" sketch:type="MSShapeGroup">
+
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
         </div>
+
+        <!-- User profile icon -->
+
+
+        <div></div>
     </header>
 </body>
 
